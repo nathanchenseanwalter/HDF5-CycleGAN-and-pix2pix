@@ -1,0 +1,211 @@
+/home/nc1514/.conda/envs/torch-env/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+----------------- Options ---------------
+               batch_size: 1                             
+                    beta1: 0.5                           
+          checkpoints_dir: ./checkpoints                 
+           continue_train: False                         
+                crop_size: 256                           
+                 dataroot: tv_synth.h5                   	[default: None]
+             dataset_mode: hdf5                          	[default: aligned]
+                direction: BtoA                          	[default: AtoB]
+              display_env: main                          
+             display_freq: 400                           
+               display_id: 0                             	[default: 1]
+            display_ncols: 4                             
+             display_port: 8097                          
+           display_server: http://localhost              
+          display_winsize: 256                           
+                    epoch: latest                        
+              epoch_count: 1                             
+                 gan_mode: vanilla                       
+                  gpu_ids: 0                             
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 1                             	[default: 3]
+                  isTrain: True                          	[default: None]
+                lambda_L1: 100.0                         
+                load_iter: 0                             	[default: 0]
+                load_size: 286                           
+                       lr: 0.0002                        
+           lr_decay_iters: 50                            
+                lr_policy: linear                        
+         max_dataset_size: inf                           
+                    model: pix2pix                       	[default: cycle_gan]
+                 n_epochs: 100                           
+           n_epochs_decay: 100                           
+               n_layers_D: 3                             
+                     name: tv_synth_mdl                  	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                  no_html: False                         
+                     norm: batch                         
+              num_threads: 4                             
+                output_nc: 1                             	[default: 3]
+                    phase: train                         
+                pool_size: 0                             
+               preprocess: resize_and_crop               
+               print_freq: 100                           
+             save_by_iter: False                         
+          save_epoch_freq: 5                             
+         save_latest_freq: 5000                          
+           serial_batches: False                         
+                   suffix:                               
+         update_html_freq: 1000                          
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+tv_synth.h5
+['synth_test', 'synth_train', 'synthval', 'tv_test', 'tv_train', 'tv_val']
+dataset [HDF5Dataset] was created
+The number of training images = 999
+initialize network with normal
+initialize network with normal
+model [Pix2PixModel] was created
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 54.408 M
+[Network D] Total number of parameters : 2.765 M
+-----------------------------------------------
+create web directory ./checkpoints/tv_synth_mdl/web...
+learning rate 0.0002000 -> 0.0002000
+(epoch: 1, iters: 100, time: 0.033, data: 0.132) G_GAN: 0.630 G_L1: 3.286 D_real: 0.560 D_fake: 0.542 
+(epoch: 1, iters: 200, time: 0.033, data: 0.001) G_GAN: 1.353 G_L1: 1.143 D_real: 0.109 D_fake: 1.384 
+(epoch: 1, iters: 300, time: 0.033, data: 0.001) G_GAN: 0.939 G_L1: 0.696 D_real: 0.638 D_fake: 0.519 
+(epoch: 1, iters: 400, time: 0.131, data: 0.001) G_GAN: 1.134 G_L1: 1.226 D_real: 0.595 D_fake: 0.779 
+(epoch: 1, iters: 500, time: 0.033, data: 0.001) G_GAN: 0.916 G_L1: 0.847 D_real: 0.550 D_fake: 0.543 
+(epoch: 1, iters: 600, time: 0.033, data: 0.001) G_GAN: 0.813 G_L1: 0.686 D_real: 0.837 D_fake: 0.437 
+(epoch: 1, iters: 700, time: 0.033, data: 0.001) G_GAN: 0.959 G_L1: 1.084 D_real: 0.521 D_fake: 0.656 
+(epoch: 1, iters: 800, time: 0.032, data: 0.001) G_GAN: 1.017 G_L1: 0.773 D_real: 0.695 D_fake: 0.355 
+(epoch: 1, iters: 900, time: 0.033, data: 0.001) G_GAN: 0.988 G_L1: 0.726 D_real: 0.540 D_fake: 0.730 
+End of epoch 1 / 200 	 Time Taken: 33 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 2, iters: 1, time: 0.034, data: 0.001) G_GAN: 0.810 G_L1: 0.701 D_real: 0.618 D_fake: 0.692 
+(epoch: 2, iters: 101, time: 0.034, data: 0.001) G_GAN: 0.797 G_L1: 0.835 D_real: 0.713 D_fake: 0.650 
+(epoch: 2, iters: 201, time: 0.083, data: 0.001) G_GAN: 1.010 G_L1: 0.675 D_real: 0.872 D_fake: 0.299 
+(epoch: 2, iters: 301, time: 0.033, data: 0.001) G_GAN: 0.680 G_L1: 0.091 D_real: 0.793 D_fake: 0.677 
+(epoch: 2, iters: 401, time: 0.034, data: 0.001) G_GAN: 0.864 G_L1: 0.780 D_real: 0.478 D_fake: 0.893 
+(epoch: 2, iters: 501, time: 0.034, data: 0.001) G_GAN: 0.777 G_L1: 0.576 D_real: 0.555 D_fake: 0.726 
+(epoch: 2, iters: 601, time: 0.034, data: 0.001) G_GAN: 1.054 G_L1: 0.497 D_real: 0.635 D_fake: 0.506 
+(epoch: 2, iters: 701, time: 0.034, data: 0.001) G_GAN: 0.738 G_L1: 0.502 D_real: 0.767 D_fake: 0.507 
+(epoch: 2, iters: 801, time: 0.033, data: 0.001) G_GAN: 0.686 G_L1: 0.420 D_real: 1.173 D_fake: 0.393 
+(epoch: 2, iters: 901, time: 0.033, data: 0.001) G_GAN: 0.700 G_L1: 0.066 D_real: 1.188 D_fake: 0.376 
+End of epoch 2 / 200 	 Time Taken: 30 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 3, iters: 2, time: 0.129, data: 0.001) G_GAN: 0.838 G_L1: 0.422 D_real: 0.801 D_fake: 0.443 
+(epoch: 3, iters: 102, time: 0.033, data: 0.003) G_GAN: 0.763 G_L1: 0.062 D_real: 0.630 D_fake: 0.860 
+(epoch: 3, iters: 202, time: 0.033, data: 0.001) G_GAN: 0.689 G_L1: 0.067 D_real: 0.652 D_fake: 0.793 
+(epoch: 3, iters: 302, time: 0.033, data: 0.001) G_GAN: 0.841 G_L1: 0.251 D_real: 0.262 D_fake: 1.365 
+(epoch: 3, iters: 402, time: 0.033, data: 0.001) G_GAN: 1.030 G_L1: 0.515 D_real: 0.439 D_fake: 0.581 
+(epoch: 3, iters: 502, time: 0.033, data: 0.001) G_GAN: 0.858 G_L1: 0.703 D_real: 0.291 D_fake: 1.020 
+(epoch: 3, iters: 602, time: 0.033, data: 0.001) G_GAN: 1.116 G_L1: 0.620 D_real: 0.456 D_fake: 1.004 
+(epoch: 3, iters: 702, time: 0.033, data: 0.001) G_GAN: 0.832 G_L1: 0.679 D_real: 0.762 D_fake: 0.472 
+(epoch: 3, iters: 802, time: 0.033, data: 0.001) G_GAN: 1.038 G_L1: 0.060 D_real: 0.645 D_fake: 0.854 
+(epoch: 3, iters: 902, time: 0.031, data: 0.001) G_GAN: 1.038 G_L1: 0.747 D_real: 0.637 D_fake: 0.420 
+End of epoch 3 / 200 	 Time Taken: 30 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 4, iters: 3, time: 0.033, data: 0.001) G_GAN: 0.751 G_L1: 0.375 D_real: 0.648 D_fake: 0.864 
+(epoch: 4, iters: 103, time: 0.033, data: 0.005) G_GAN: 0.905 G_L1: 0.630 D_real: 0.415 D_fake: 0.897 
+(epoch: 4, iters: 203, time: 0.088, data: 0.001) G_GAN: 0.928 G_L1: 0.486 D_real: 0.677 D_fake: 0.717 
+(epoch: 4, iters: 303, time: 0.034, data: 0.001) G_GAN: 0.738 G_L1: 0.453 D_real: 0.932 D_fake: 0.484 
+(epoch: 4, iters: 403, time: 0.033, data: 0.001) G_GAN: 0.835 G_L1: 0.442 D_real: 0.667 D_fake: 0.690 
+(epoch: 4, iters: 503, time: 0.033, data: 0.001) G_GAN: 1.870 G_L1: 0.338 D_real: 0.735 D_fake: 0.124 
+(epoch: 4, iters: 603, time: 0.034, data: 0.001) G_GAN: 0.735 G_L1: 0.386 D_real: 0.691 D_fake: 0.536 
+(epoch: 4, iters: 703, time: 0.033, data: 0.001) G_GAN: 0.985 G_L1: 0.353 D_real: 0.887 D_fake: 0.462 
+(epoch: 4, iters: 803, time: 0.034, data: 0.001) G_GAN: 1.163 G_L1: 0.395 D_real: 0.474 D_fake: 0.514 
+(epoch: 4, iters: 903, time: 0.033, data: 0.001) G_GAN: 0.972 G_L1: 0.404 D_real: 0.908 D_fake: 0.406 
+End of epoch 4 / 200 	 Time Taken: 30 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 5, iters: 4, time: 0.098, data: 0.001) G_GAN: 0.788 G_L1: 0.390 D_real: 0.925 D_fake: 0.312 
+(epoch: 5, iters: 104, time: 0.032, data: 0.000) G_GAN: 0.916 G_L1: 0.324 D_real: 0.569 D_fake: 0.789 
+(epoch: 5, iters: 204, time: 0.032, data: 0.001) G_GAN: 0.713 G_L1: 0.722 D_real: 0.769 D_fake: 0.714 
+(epoch: 5, iters: 304, time: 0.033, data: 0.001) G_GAN: 0.763 G_L1: 0.699 D_real: 0.656 D_fake: 0.675 
+(epoch: 5, iters: 404, time: 0.033, data: 0.001) G_GAN: 0.749 G_L1: 0.451 D_real: 1.186 D_fake: 0.349 
+(epoch: 5, iters: 504, time: 0.032, data: 0.001) G_GAN: 0.699 G_L1: 0.023 D_real: 1.090 D_fake: 0.448 
+(epoch: 5, iters: 604, time: 0.032, data: 0.001) G_GAN: 1.069 G_L1: 0.349 D_real: 0.452 D_fake: 0.606 
+(epoch: 5, iters: 704, time: 0.034, data: 0.003) G_GAN: 1.237 G_L1: 0.678 D_real: 0.401 D_fake: 0.716 
+(epoch: 5, iters: 804, time: 0.033, data: 0.001) G_GAN: 0.637 G_L1: 0.257 D_real: 1.265 D_fake: 0.288 
+(epoch: 5, iters: 904, time: 0.032, data: 0.001) G_GAN: 0.736 G_L1: 0.406 D_real: 0.209 D_fake: 1.857 
+saving the model at the end of epoch 5, iters 4995
+End of epoch 5 / 200 	 Time Taken: 31 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 6, iters: 5, time: 0.031, data: 0.001) G_GAN: 2.491 G_L1: 0.696 D_real: 0.134 D_fake: 0.122 
+saving the latest model (epoch 6, total_iters 5000)
+(epoch: 6, iters: 105, time: 0.032, data: 0.000) G_GAN: 0.988 G_L1: 0.600 D_real: 0.321 D_fake: 0.890 
+(epoch: 6, iters: 205, time: 0.086, data: 0.001) G_GAN: 1.730 G_L1: 0.760 D_real: 0.169 D_fake: 0.733 
+(epoch: 6, iters: 305, time: 0.033, data: 0.001) G_GAN: 1.239 G_L1: 0.448 D_real: 0.533 D_fake: 0.558 
+(epoch: 6, iters: 405, time: 0.035, data: 0.001) G_GAN: 1.533 G_L1: 0.780 D_real: 0.217 D_fake: 0.584 
+(epoch: 6, iters: 505, time: 0.033, data: 0.001) G_GAN: 1.418 G_L1: 0.245 D_real: 0.338 D_fake: 0.922 
+(epoch: 6, iters: 605, time: 0.032, data: 0.001) G_GAN: 1.419 G_L1: 0.305 D_real: 0.387 D_fake: 1.067 
+(epoch: 6, iters: 705, time: 0.034, data: 0.001) G_GAN: 0.954 G_L1: 0.022 D_real: 1.245 D_fake: 0.505 
+(epoch: 6, iters: 805, time: 0.034, data: 0.001) G_GAN: 0.944 G_L1: 0.462 D_real: 0.971 D_fake: 0.364 
+(epoch: 6, iters: 905, time: 0.033, data: 0.001) G_GAN: 0.670 G_L1: 0.498 D_real: 0.260 D_fake: 1.317 
+End of epoch 6 / 200 	 Time Taken: 31 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 7, iters: 6, time: 0.088, data: 0.001) G_GAN: 1.616 G_L1: 0.706 D_real: 0.473 D_fake: 0.296 
+(epoch: 7, iters: 106, time: 0.033, data: 0.000) G_GAN: 0.963 G_L1: 0.289 D_real: 0.514 D_fake: 0.740 
+(epoch: 7, iters: 206, time: 0.033, data: 0.001) G_GAN: 1.189 G_L1: 0.346 D_real: 0.664 D_fake: 0.380 
+(epoch: 7, iters: 306, time: 0.033, data: 0.001) G_GAN: 0.544 G_L1: 0.152 D_real: 1.083 D_fake: 0.302 
+(epoch: 7, iters: 406, time: 0.032, data: 0.001) G_GAN: 1.232 G_L1: 0.658 D_real: 0.642 D_fake: 0.315 
+(epoch: 7, iters: 506, time: 0.031, data: 0.001) G_GAN: 0.918 G_L1: 0.584 D_real: 0.741 D_fake: 0.430 
+(epoch: 7, iters: 606, time: 0.033, data: 0.001) G_GAN: 0.631 G_L1: 0.219 D_real: 0.890 D_fake: 0.366 
+(epoch: 7, iters: 706, time: 0.033, data: 0.001) G_GAN: 0.860 G_L1: 0.280 D_real: 1.247 D_fake: 0.300 
+(epoch: 7, iters: 806, time: 0.033, data: 0.001) G_GAN: 0.871 G_L1: 0.393 D_real: 0.338 D_fake: 0.837 
+(epoch: 7, iters: 906, time: 0.032, data: 0.001) G_GAN: 0.923 G_L1: 0.181 D_real: 1.170 D_fake: 0.224 
+End of epoch 7 / 200 	 Time Taken: 30 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 8, iters: 7, time: 0.033, data: 0.001) G_GAN: 0.744 G_L1: 0.563 D_real: 1.097 D_fake: 0.265 
+(epoch: 8, iters: 107, time: 0.034, data: 0.002) G_GAN: 1.802 G_L1: 0.718 D_real: 0.290 D_fake: 0.566 
+(epoch: 8, iters: 207, time: 0.082, data: 0.001) G_GAN: 0.819 G_L1: 0.412 D_real: 1.226 D_fake: 0.275 
+(epoch: 8, iters: 307, time: 0.033, data: 0.001) G_GAN: 0.788 G_L1: 0.509 D_real: 0.949 D_fake: 0.352 
+(epoch: 8, iters: 407, time: 0.032, data: 0.001) G_GAN: 1.156 G_L1: 0.286 D_real: 0.554 D_fake: 0.524 
+(epoch: 8, iters: 507, time: 0.034, data: 0.001) G_GAN: 1.426 G_L1: 0.831 D_real: 0.636 D_fake: 0.306 
+(epoch: 8, iters: 607, time: 0.033, data: 0.001) G_GAN: 1.596 G_L1: 0.683 D_real: 0.133 D_fake: 0.461 
+(epoch: 8, iters: 707, time: 0.034, data: 0.001) G_GAN: 1.090 G_L1: 0.792 D_real: 0.601 D_fake: 0.520 
+(epoch: 8, iters: 807, time: 0.032, data: 0.001) G_GAN: 1.372 G_L1: 0.292 D_real: 0.308 D_fake: 1.208 
+(epoch: 8, iters: 907, time: 0.033, data: 0.001) G_GAN: 0.980 G_L1: 0.282 D_real: 0.539 D_fake: 0.749 
+End of epoch 8 / 200 	 Time Taken: 30 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 9, iters: 8, time: 0.094, data: 0.001) G_GAN: 0.915 G_L1: 0.249 D_real: 1.154 D_fake: 0.249 
+(epoch: 9, iters: 108, time: 0.033, data: 0.000) G_GAN: 1.534 G_L1: 0.632 D_real: 0.126 D_fake: 0.763 
+(epoch: 9, iters: 208, time: 0.033, data: 0.001) G_GAN: 0.709 G_L1: 0.007 D_real: 0.585 D_fake: 0.832 
+(epoch: 9, iters: 308, time: 0.033, data: 0.001) G_GAN: 0.660 G_L1: 0.186 D_real: 1.506 D_fake: 0.276 
+(epoch: 9, iters: 408, time: 0.033, data: 0.001) G_GAN: 1.944 G_L1: 0.521 D_real: 0.282 D_fake: 0.191 
+(epoch: 9, iters: 508, time: 0.031, data: 0.001) G_GAN: 0.774 G_L1: 0.331 D_real: 0.952 D_fake: 0.370 
+(epoch: 9, iters: 608, time: 0.033, data: 0.001) G_GAN: 1.872 G_L1: 0.554 D_real: 0.182 D_fake: 0.183 
+(epoch: 9, iters: 708, time: 0.033, data: 0.001) G_GAN: 0.825 G_L1: 0.470 D_real: 0.976 D_fake: 0.481 
+(epoch: 9, iters: 808, time: 0.031, data: 0.001) G_GAN: 1.133 G_L1: 0.528 D_real: 0.607 D_fake: 0.706 
+(epoch: 9, iters: 908, time: 0.033, data: 0.001) G_GAN: 1.191 G_L1: 0.208 D_real: 0.852 D_fake: 0.364 
+End of epoch 9 / 200 	 Time Taken: 30 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 10, iters: 9, time: 0.032, data: 0.001) G_GAN: 1.473 G_L1: 0.759 D_real: 0.617 D_fake: 0.276 
+(epoch: 10, iters: 109, time: 0.033, data: 0.000) G_GAN: 1.277 G_L1: 0.511 D_real: 0.311 D_fake: 0.483 
+(epoch: 10, iters: 209, time: 0.094, data: 0.001) G_GAN: 0.891 G_L1: 0.430 D_real: 0.641 D_fake: 0.533 
+(epoch: 10, iters: 309, time: 0.034, data: 0.001) G_GAN: 0.786 G_L1: 0.265 D_real: 0.782 D_fake: 0.568 
+(epoch: 10, iters: 409, time: 0.033, data: 0.001) G_GAN: 0.701 G_L1: 0.006 D_real: 0.704 D_fake: 0.687 
+(epoch: 10, iters: 509, time: 0.033, data: 0.001) G_GAN: 1.236 G_L1: 0.250 D_real: 0.856 D_fake: 0.291 
+(epoch: 10, iters: 609, time: 0.032, data: 0.001) G_GAN: 1.059 G_L1: 0.304 D_real: 0.795 D_fake: 0.353 
+(epoch: 10, iters: 709, time: 0.033, data: 0.001) G_GAN: 1.227 G_L1: 0.603 D_real: 0.235 D_fake: 0.715 
+(epoch: 10, iters: 809, time: 0.033, data: 0.003) G_GAN: 1.817 G_L1: 0.295 D_real: 0.326 D_fake: 0.694 
+(epoch: 10, iters: 909, time: 0.032, data: 0.001) G_GAN: 1.622 G_L1: 0.675 D_real: 0.442 D_fake: 0.229 
+saving the model at the end of epoch 10, iters 9990
+End of epoch 10 / 200 	 Time Taken: 31 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 11, iters: 10, time: 0.099, data: 0.001) G_GAN: 2.067 G_L1: 0.683 D_real: 0.292 D_fake: 0.083 
+saving the latest model (epoch 11, total_iters 10000)
+(epoch: 11, iters: 110, time: 0.034, data: 0.001) G_GAN: 1.490 G_L1: 0.349 D_real: 0.104 D_fake: 0.770 
+(epoch: 11, iters: 210, time: 0.034, data: 0.001) G_GAN: 2.103 G_L1: 0.440 D_real: 0.145 D_fake: 1.122 
+(epoch: 11, iters: 310, time: 0.034, data: 0.001) G_GAN: 1.203 G_L1: 0.236 D_real: 0.561 D_fake: 0.629 
+(epoch: 11, iters: 410, time: 0.033, data: 0.001) G_GAN: 2.959 G_L1: 0.392 D_real: 0.087 D_fake: 0.116 
+(epoch: 11, iters: 510, time: 0.034, data: 0.001) G_GAN: 2.135 G_L1: 0.816 D_real: 0.044 D_fake: 0.540 
+(epoch: 11, iters: 610, time: 0.034, data: 0.001) G_GAN: 0.817 G_L1: 0.237 D_real: 1.139 D_fake: 0.513 
+(epoch: 11, iters: 710, time: 0.034, data: 0.001) G_GAN: 1.757 G_L1: 0.663 D_real: 0.469 D_fake: 0.459 
+(epoch: 11, iters: 810, time: 0.033, data: 0.001) G_GAN: 2.423 G_L1: 0.366 D_real: 0.179 D_fake: 0.141 
+(epoch: 11, iters: 910, time: 0.032, data: 0.001) G_GAN: 1.169 G_L1: 0.374 D_real: 0.743 D_fake: 0.290 
+End of epoch 11 / 200 	 Time Taken: 31 sec
+learning rate 0.0002000 -> 0.0002000
+slurmstepd: error: *** JOB 411369 ON traverse-k05g8 CANCELLED AT 2024-01-03T15:33:37 DUE TO TIME LIMIT ***
